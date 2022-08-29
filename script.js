@@ -35,20 +35,20 @@ function RenderizarRespostas(){
         if(arrayMensagens[i].type=== "status"){
         ul.innerHTML = ul.innerHTML + `
             <li class="mensagemStatus"> 
-            <h1>(${arrayMensagens[i].time})</h1><strong> ${arrayMensagens[i].from}</strong>  ${arrayMensagens[i].text}
+            <h1>(${arrayMensagens[i].time})</h1><h2><strong> ${arrayMensagens[i].from}</strong></h2><h2> ${arrayMensagens[i].text}</h2>
             </li>
         `
     }
     if(arrayMensagens[i].type=== "message"){
         ul.innerHTML = ul.innerHTML + `
             <li class="mensagemNormal"> 
-            <h1>(${arrayMensagens[i].time})</h1> <strong>${arrayMensagens[i].from}</strong>  para <strong>${arrayMensagens[i].to}</strong>:<h2> ${arrayMensagens[i].text}</h2>
+            <h1>(${arrayMensagens[i].time})</h1><h2> <strong>${arrayMensagens[i].from}</strong></h2>  para<h2> <strong>${arrayMensagens[i].to}</strong></h2>:<h2> ${arrayMensagens[i].text}</h2>
             </li>
         `
     }
     if(arrayMensagens[i].type=== "private_message"){
         ul.innerHTML = ul.innerHTML + `
-            <li class="mensagemPrivada" ><h1>(${arrayMensagens[i].time})</h1> <strong><h2>${arrayMensagens[i].from}</strong> para <strong>${arrayMensagens[i].to}</strong>: ${arrayMensagens[i].text}</h2>
+            <li class="mensagemPrivada" ><h1>(${arrayMensagens[i].time})</h1> <strong><h2>${arrayMensagens[i].from}</strong></h2> para <h2><strong>${arrayMensagens[i].to}</strong>: ${arrayMensagens[i].text}</h2>
             </li>
         `
     }
