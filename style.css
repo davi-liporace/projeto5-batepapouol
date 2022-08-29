@@ -47,18 +47,42 @@ ion-icon{
     font-size: 18px;
     width: 50%;
     height: 30px;
+    border: none;
+    outline: none;
 }
 .caixaMensagens{
     width: 100%;
-    background-color: aqua;
     height: 700px;
     margin-top: 95px;
     box-sizing: border-box;
     padding-top: 10px;
     padding-left: 10px;
+    overflow:scroll;
+
 }
 li{
     font-family: 'Roboto';
     font-size: 14px;
     margin-bottom: 5px;
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+.mensagemPrivada{
+    background-color: #FFDEDE;
+    width: 100%;
+}
+h1{
+   color: #AAAAAA;
+   margin-right: 5px;
+}
+h2{
+    word-break: break-word;
+}
+.mensagemStatus{
+    background-color:#DCDCDC;
+}
+.mensagemNormal{
+    background-color: white;
 }

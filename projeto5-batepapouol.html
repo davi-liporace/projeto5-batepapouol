@@ -8,23 +8,23 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Righteous" />
   </head>
-  <body>
+  <body onload="login()">
     <div class="barraSuperior">
       <img class="logoUol" src="./img/logouol.png" />
       <ion-icon name="people"></ion-icon>
     </div>
     <div class="caixaMensagens">
-      <ul>
-        <li>João mandou mensagem para Maria</li>
-        <LI>teste</LI>
+      <ul class="mensagens">
+        <li>CARREGANDO</li>
       </ul>
 
     </div>
 
 <div class="barraInferior">
   <input type="textarea" class="textoMensagem" placeholder="Escreva aqui"></input>
-  <ion-icon name="paper-plane-outline" onclick="teste()"></ion-icon>
+  <ion-icon name="paper-plane-outline" onclick="enviarMensagem()"></ion-icon>
 </div>
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+   <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="script.js"></script>
   </body>
